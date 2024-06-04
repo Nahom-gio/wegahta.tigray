@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEGAHTA</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-yellow-50">
+    <!-- Navigation Bar -->
+    <div class="py-4 border-b border-gray-300">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="weg.png" alt="Wegahta Logo" class="h-10 mr-2">
+                <a href="index.html" class="text-orange-500 font-bold text-lg">WEGAHTA</a>
+            </div>
+            <div class="md:hidden flex items-center">
+                <button id="menu-btn" class="block text-gray-600 hover:text-yellow-500 focus:outline-none">
+                    <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="space-x-4 hidden md:flex">
+                <a href="ourwork.html" class="text-gray-600 font-bold hover:text-yellow-500">ABOUT US</a>
+                <a href="takeaction.html" class="text-gray-600 font-bold hover:text-yellow-500">TAKE ACTION</a>
+            </div>
+            <div class="space-x-2">
+                <button class="px-4 py-2 bg-transparent border border-gray-400 rounded-md hover:bg-yellow-500 text-gray-600">GIVE</button>
+                <button class="px-4 py-2 bg-transparent border border-gray-400 rounded-md hover:bg-yellow-500 text-gray-600">SIGN IN</button>
+            </div>
+        </div>
+        <div id="menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="ourwork.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-500 hover:bg-gray-50">ABOUT US</a>
+                <a href="takeaction.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-500 hover:bg-gray-50">TAKE ACTION</a>
+                
+            </div>
+        </div>
+    </div>
+
+    <style>
+        @media (max-width: 767px) {
+            .space-x-4 {
+                display: none;
+            }
+        }
+    </style>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+const menu = document.getElementById('menu');
+
+menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+});
+    </script>
+    <!-- Main Container -->
+    <section class="main-container md:flex items-center justify-center p-9 md:p-16 md:h-106">
+        <div class="w-full md:w-1/2 h-83 overflow-hidden rounded-lg mb-4 md:mb-0">
+            <img src="h.png" alt="Wegahta Photo" class="w-full h-full object-cover rounded">
+        </div>
+        <div class="content w-full md:w-1/2 text-center md:text-left md:pl-8">
+            <h2 class="text-4xl md:text-5xl text-yellow-500 text-center">Wegahta</h2>
+            <p class="text-xl md:text-3xl mt-4 leading-relaxed">
+                Wegahta, a charitable civil society organization established with the noble intention of making a meaningful difference in the lives of those affected by the scourge of war and drought.
+            </p>
+        </div>
+    </section>
+
+    <!-- Mission Container -->
+
+    <div class="py-12 ">
+        <div class="container mx-auto">
+            <div class="text-center">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Our work</h2>
+                <p class="text-gray-600 text-xl leading-relaxed"> Wegahta's priorities include both short-term humanitarian interventions and long-term sustainable solutions. In the short term, we focus on alleviating the immediate suffering caused by conflict and drought, tackling issues such as famine, lack of access to education, insufficient medical supplies, and financial hardship.
+                    .</p>
+            </div>
+        </div>
+    </div>
+    <!-- Impact Container -->
+    <section class="impact-container flex flex-col md:flex-row bg-black text-white p-8 md:p-16 md:h-48">
+        <div class="left-section flex flex-col items-center justify-center flex-1 text-center md:text-left md:pl-16">
+            <div class="top-text text-3xl md:text-4xl font-bold">15,000</div>
+            <div class="bottom-text text-lg md:text-xl mt-4 font-bold">PROJECTS FUNDED</div>
+        </div>
+        <div class="middle-section flex flex-col items-center justify-center flex-1 text-center md:text-left md:pl-16">
+            <div class="top-text text-xl md:text-2xl font-bold">WEGAHTA'S IMPACT TO DATE</div>
+        </div>
+        <div class="right-section flex flex-col items-center justify-center flex-1 text-center md:text-left md:pl-16">
+            <div class="top-text text-3xl md:text-4xl font-bold">250,000</div>
+            <div class="bottom-text text-lg md:text-xl mt-4 font-bold">PEOPLE WILL BE SERVED</div>
+        </div>
+    </section>
+
+    <!-- Impact Containers -->
+
+    <div class=" py-12">
+        <div class="container mx-auto flex flex-col-reverse md:flex-row items-center">
+            <div class="md:w-1/2 px-4 mb-8 md:mb-0">
+                
+                <p class="text-gray-600 text-xl leading-relaxed">We believe in the power of knowledge and innovation to effect lasting change. Together, we can make a tangible difference in the lives of those affected by adversity, fostering resilience, dignity, and hope.
+            </div>
+            <div class="md:w-1/2 px-4">
+                <img src="https://gamesmakersethiopia.wordpress.com/wp-content/uploads/2013/05/rs57090_jo_042413_3914.jpg?w=490&h=326" alt="Photo" class="rounded-lg shadow-md">
+            </div>
+        </div>
+    </div>
+    <!-- CTA Section -->
+    <section class="cta-section flex flex-col md:flex-row items-center justify-center bg-yellow-100 p-8 md:p-16 md:h-106">
+        <div class="image-section w-full md:w-1/3 h-72 overflow-hidden rounded-lg mb-4 md:mb-0 md:mr-8">
+            <img src="g.png" alt="Image of a setting sun" class="w-full h-full object-cover rounded">
+        </div>
+
+        <div class="text-sections w-full md:w-1/2 text-center md:text-left md:pl-8">
+            <p class="text-xl md:text-2xl mb-4">
+                Together, we can make a tangible difference in the lives of those affected by adversity, fostering resilience, dignity, and hope.
+            </p>
+            <p class="text-sm md:text-base">
+                This approach, we aim to develop scientifically grounded solutions tailored to the unique circumstances and resources available in the region. Join us in our mission to create a brighter future for all.
+            </p>
+            <button class="donate-button bg-yellow-500 text-black text-lg font-medium py-2 px-4 rounded mt-4 mx-auto md:mx-0">
+                DONATE
+            </button>
+        </div>
+    </section>
+    
+    <div class="subscribe-container bg-gray-100 py-12">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="text-section mb-4 md:mb-0 text-center md:text-left">
+                <h3 class="text-lg font-bold text-gray-800">Stay Connected</h3>
+                <p class="text-gray-600 text-base">Get updates on our latest initiatives and impact.</p>
+            </div>
+            <div class="form-section flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2">
+                <input type="text" placeholder="First name" class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent flex-1 md:w-auto">
+                <input type="text" placeholder="Last name" class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent flex-1 md:w-auto">
+                <input type="email" placeholder="Email" class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent flex-1 md:w-auto">
+                <button class="px-4 py-2 bg-yellow-500 text-black rounded-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 flex-1 md:w-auto">Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (if any) -->
+    <!-- Add your footer content here -->
+
+</body>
+</html>

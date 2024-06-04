@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-sans bg-yellow-50">
+    <div class="py-4 border-b border-gray-300">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="weg.png" alt="Wegahta Logo" class="h-10 mr-2">
+                <a href="index.html" class="text-orange-500 font-bold text-lg">WEGAHTA</a>
+            </div>
+            <div class="md:hidden flex items-center">
+                <button id="menu-btn" class="block text-gray-600 hover:text-yellow-500 focus:outline-none">
+                    <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="space-x-4 hidden md:flex">
+                <a href="ourwork.html" class="text-gray-600 font-bold hover:text-yellow-500">ABOUT US</a>
+                <a href="takeaction.html" class="text-gray-600 font-bold hover:text-yellow-500">TAKE ACTION</a>
+            </div>
+            <div class="space-x-2">
+                <button class="px-4 py-2 bg-transparent border border-gray-400 rounded-md hover:bg-yellow-500 text-gray-600">GIVE</button>
+                <button class="px-4 py-2 bg-transparent border border-gray-400 rounded-md hover:bg-yellow-500 text-gray-600">SIGN IN</button>
+            </div>
+        </div>
+        <div id="menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="ourwork.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-500 hover:bg-gray-50">ABOUT US</a>
+                <a href="takeaction.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-500 hover:bg-gray-50">TAKE ACTION</a>
+                
+            </div>
+        </div>
+    </div>
+
+    <style>
+        @media (max-width: 767px) {
+            .space-x-4 {
+                display: none;
+            }
+        }
+    </style>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+const menu = document.getElementById('menu');
+
+menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+});
+    </script>
+
+
+    <div class="py-12 ">
+        <div class="container mx-auto">
+            <div class="text-center">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">About Us</h2>
+                <p class="text-gray-600 text-lg text-center leading-relaxed">Wegahta is a registered non-governmental organisation established by Tigrayans born in Addis Ababa. We obtained registration and legal recognition under the Ethiopian Civil Society Organisation Proclamation Number 1113/2019 and registration number 5589, issued on May 10, 2021.</p>
+                </div>
+        </div>
+    </div>
+
+
+
+    <div class="py-12 bg-green-100">
+        <div class="container mx-auto ">
+            <div class="text-center">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Our Commitment to Research</h2>
+                <p class="text-gray-600 leading-relaxed">Wegahta boasts a cadre of skilled and educated individuals eager to lend their expertise to the research efforts focused on Tigray's challenges. Our team stands ready to delve into key areas including agriculture, education, healthcare, tourism, and the sustainable utilization of available resources. <br>By leveraging our collective knowledge and resources, we aim to generate actionable insights that can effectively combat the challenges facing the region.  Join us in our mission to drive positive change and create a brighter future for all residents of Tigray.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-blue-50 py-12">
+        <div class="container mx-auto flex flex-col-reverse md:flex-row items-center">
+            <div class="md:w-1/2 px-4 mb-8 md:mb-0">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Awareness of Tigray's Challenges and Opportunities</h2>
+                <p class="text-gray-600 text-lg leading-relaxed">Presently, Tigray grapples with a multitude of pressing issues, ranging from drought-induced famine and widespread displacement to critical shortages in medical supplies, educational resources, and nutritional support for children. Additionally, access to clean water for both consumption and irrigation remains a significant concern, compounded by erratic rainfall patterns and high rates of unemployment.</p>
+            </div>
+            <div class="md:w-1/2 px-4">
+                <img src="pro.jpeg" alt="Photo" class="rounded-lg shadow-md">
+            </div>
+        </div>
+    </div>
+
+    <div class="py-12">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="text-center">
+                <img src="b.png" alt="Brand Partnerships" class="h-24 w-24 mx-auto rounded-full mb-4">
+                <h3 class="text-lg font-bold text-gray-800 mb-2">Brand Partnerships</h3>
+                <p class="text-gray-600 text-base">Beyond The Well, a select group of companies and foundations have chosen to support our staff salaries and operations through corporate gifts, percentage of sales, and campaigns tailored to each business' market and brand.</p>
+            </div>
+            <div class="text-center">
+                <img src="m.png" alt="Investment Earnings" class="h-24 w-24 mx-auto rounded-full mb-4">
+                <h3 class="text-lg font-bold text-gray-800 mb-2">Investment Earnings</h3>
+                <p class="text-gray-600 text-base">We utilise industry best practices in managing investment assets to bring clean water to the most people. Operating funds and committed donor funds awaiting deployment are invested safely in capital markets with a goal to grow assets. This multiplies the impact charity: water and its donors have on the water crisis over time.</p>
+            </div>
+            <div class="text-center">
+                <img src="f.png" alt="Gifts in Kind" class="h-24 w-24 mx-auto rounded-full mb-4">
+                <h3 class="text-lg font-bold text-gray-800 mb-2">Gifts in Kind</h3>
+                <p class="text-gray-600 text-base">From technologies to office furniture, much of what we have is donated by generous companies. We're deeply grateful to those who provide equipment and services to help us get the job done with quality and style.</p>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class=" h-86 md:h-86 mb-8 md:mb-0">
+        <img src="dd.png" alt="Photo" class="h-full shadow-md">
+    </div>
+    
+    
+    <div class="subscribe-container bg-gray-200 py-12">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="text-section mb-4 md:mb-0 text-center md:text-left">
+                <h3 class="text-lg font-bold text-gray-800">Stay Connected</h3>
+                <p class="text-gray-600 text-base">Get updates on our latest initiatives and impact.</p>
+            </div>
+            <div class="form-section flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2">
+                <input type="text" placeholder="First name" class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent flex-1 md:w-auto">
+                <input type="text" placeholder="Last name" class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent flex-1 md:w-auto">
+                <input type="email" placeholder="Email" class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent flex-1 md:w-auto">
+                <button class="px-4 py-2 bg-yellow-500 text-black rounded-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 flex-1 md:w-auto">Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+    </body>
+    </html>
